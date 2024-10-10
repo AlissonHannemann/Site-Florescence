@@ -1,0 +1,522 @@
+@media (max-width: 349px) {
+    .produtos {
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+    }
+
+    .produtos img {
+        width: 200px;
+        height: 250px;
+        margin: 0;
+    }
+
+    #produtosOpen {
+        top: 0;
+    }
+
+    .produtos .infor {
+        margin: 0;
+    }
+
+    .produtos .buttons {
+        margin: 0;
+    }
+
+    .produtos .buttons .comprar {
+        width: 150px;
+    }
+
+    .conteiner1 {
+        display: none;
+    }
+
+}
+
+@media (min-width: 350px) and (max-width: 429px) {
+    .produtos {
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+    }
+
+    .produtos img {
+        width: 300px;
+        height: 350px;
+        margin: 0;
+    }
+
+    #produtosOpen {
+        top: 0;
+    }
+
+    .produtos .infor {
+        margin: 0;
+    }
+
+    .produtos .buttons {
+        margin: 0;
+    }
+
+    .produtos .buttons .comprar {
+        width: 200px;
+    }
+
+    .conteiner1 {
+        padding-left: 0;
+    }
+
+    .frete {
+        margin: 0;
+        padding: 0;
+    }
+
+    .caixas button {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 237px;
+        height: 40px;
+    }
+}
+
+@media (min-width:430px) and (max-width:742px) {
+    .menu {
+        left: -700px;
+    }
+
+    .slide1 .swiper {
+        height: 500px;
+    }
+
+    .slide1 .swiper-slide img {
+        height: 500px;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    header div {
+        height: 100px;
+    }
+
+    header h2 {
+        font-size: 43px;
+    }
+
+    header div i {
+        font-size: 32px;
+    }
+
+    .slide2 .swiper {
+        height: 80px;
+    }
+
+    .slide2 .swiper-slide {
+        font-size: 40px;
+    }
+
+    .slide3 .swiper {
+        width: 400px;
+        height: 320px;
+    }
+
+    .slide3 .swiper-slide h2 {
+        font-size: 38px;
+    }
+
+    .slide4 .swiper-slide {
+        width: 400px;
+        height: 400px;
+    }
+
+    .slide4 .swiper-slide img {
+        height: 64%;
+    }
+
+    .slide4 .swiper-slide h2 {
+        font-size: 30px;
+    }
+
+    .slide4 .swiper-slide p {
+        font-size: 24px;
+    }
+
+    .novidades {
+        font-size: 37px;
+    }
+
+    footer .infos h2 {
+        font-size: 23px;
+    }
+
+    footer .title {
+        font-size: 30px;
+    }
+
+    footer .contato .icones i {
+        font-size: 25px;
+    }
+
+    footer .contato .icones p {
+        font-size: 22px;
+    }
+
+
+    .produtos {
+        width: 95%;
+        left: 0;
+    }
+
+    .produtos img {
+        width: 300px;
+        height: 350px;
+        margin: 0;
+        margin-right: 15px;
+    }
+
+    #produtosOpen {
+        top: 12%;
+    }
+
+    .produtos .infor {
+        margin: 0;
+    }
+
+    .produtos .buttons {
+        margin: 0;
+    }
+
+    .produtos .buttons .comprar {
+        width: 200px;
+    }
+
+    .conteiner1 {
+        padding-left: 0;
+    }
+
+    .frete {
+        margin: 0;
+        padding: 0;
+    }
+
+    .caixas button {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 237px;
+        height: 40px;
+    }
+
+    .caixas input {
+        width: 150px;
+    }
+
+    .caixas button {
+        width: 160px;
+        height: 36px;
+        margin-left: 15px;
+    }
+
+    .produtos i {
+        margin: 20px 10px;
+    }
+} 
+
+@media (min-width:743px) and (max-width: 900px) {
+    .menu {
+        left: -1000px;
+    }
+
+    .menu .icons {
+        font-size: 35px;
+    }
+
+    .menu .informacoes {
+        font-size: 30px;
+    }
+
+    .slide1 .swiper {
+        height: 625px;
+    }
+
+    .slide1 .swiper-slide img {
+        height: 625px;
+    }
+
+    header {
+        height: 115px;
+    }
+
+    header div {
+        height: 115px;
+    }
+
+    header h2 {
+        font-size: 51px;
+    }
+
+    header div i {
+        font-size: 40px;
+    }
+
+    header div #car {
+        font-size: 35px;
+    }
+
+    .slide2 .swiper {
+        height: 91px;
+    }
+
+    .slide2 .swiper-slide {
+        font-size: 50px;
+    }
+
+    .mensagem p {
+        font-size: 28px;
+    }
+
+    .slide3 .swiper {
+        width: 480px;
+        height: 400px;
+    }
+
+    .slide3 .swiper-slide h2 {
+        font-size: 54px;
+    }
+
+    .slide4 .swiper {
+        width: 480px;
+        height: 400px;
+    }
+
+    .slide4 .swiper-slide .titulo {
+        font-size: 28px;
+    }
+
+    .slide4 .swiper-slide .preco {
+        font-size: 25px;
+    }
+
+    .novidades {
+        font-size: 44px;
+    }
+
+    footer .infos h2 {
+        font-size: 28px;
+    }
+
+    footer .title {
+        font-size: 35px;
+    }
+
+    footer .contato .icones i {
+        font-size: 30px;
+    }
+
+    footer .contato .icones p {
+        font-size: 27px;
+    }
+
+
+    .produtos {
+        width: 95%;
+        left: 0;
+    }
+
+    .produtos img {
+        width: 300px;
+        height: 350px;
+        margin: 0;
+        margin-right: 15px;
+    }
+
+    #produtosOpen {
+        top: 23%;
+    }
+
+    .produtos .infor {
+        margin: 0;
+    }
+
+    .produtos .buttons {
+        margin: 0;
+    }
+
+    .produtos .buttons .comprar {
+        width: 250px;
+    }
+
+    .conteiner1 {
+        padding-left: 0;
+    }
+
+    .frete {
+        margin: 0;
+        padding: 0;
+    }
+
+    .caixas button {
+        margin-left: 10px;
+        margin-top: 15px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .caixas input {
+        width: 150px;
+        height: 35px;
+    }
+
+    .produtos i {
+        margin: 20px 10px;
+    }
+
+    .produtos .infor .titulo1 {
+        font-size: 35px;
+    }
+
+    .produtos .infor .preco1 {
+        font-size: 30px;
+    }
+
+    .frete h2 {
+        font-size: 30px;
+    }
+
+    .caixas button {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 890px) {
+    .menu {
+        left: -1500px;
+    }
+
+    header div i {
+        padding: 0 20px;
+        font-size: 45px;
+    }
+
+    header div #car {
+        font-size: 33px;
+    }
+
+    header h2 {
+        font-size: 45px;
+    }
+
+    .menu .icons {
+        font-size: 35px;
+        margin: 10px 15px;
+    }
+
+    .menu .informacoes {
+        font-size: 35px;
+        margin-left: 15px;
+    }
+
+    .slide1 .swiper {
+        height: auto;
+    }
+
+    .slide1 .swiper-slide img {
+        height: 615px;
+    }
+
+    .slide2 .swiper {
+        height: 95px;
+    }
+
+    .slide2 .swiper-slide {
+        font-size: 50px;
+    }
+
+    .mensagem p {
+        font-size: 30px;
+    }
+
+    .slide3 .swiper {
+        width: 80%;
+        height: 450px;
+    }
+
+    .slide4 .swiper {
+        width: 80%;
+        height: 450px;
+    }
+
+    .slide4 .swiper-slide img {
+        width: 80%;
+    }
+
+    footer .infos h2 {
+        font-size: 28px;
+    }
+
+    footer .title {
+        font-size: 35px;
+    }
+
+    footer .contato .icones i {
+        font-size: 30px;
+    }
+
+    footer .contato .icones p {
+        font-size: 27px;
+    }
+
+    .mensagem {
+        width: 80%;
+        margin: auto;
+    }
+
+    .produtos {
+        width: 80%;
+        left: 10%;
+    }
+
+    .produtos .infor .titulo1 {
+        font-size: 37px;
+    }
+
+    .produtos .infor .preco1 {
+        font-size: 30px;
+    }
+
+    .produtos .buttons .comprar {
+        width: 300px;
+    }
+
+    .conteiner1 {
+        padding: 0;
+    }
+
+    .frete {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .frete h2 {
+        font-size: 32px;
+    }
+
+    .conteiner1 .caixas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixas button {
+        width: 238px;
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 20px;
+        height: 37px;
+    }
+}
+
+@media (min-width: 1100px) {
+    #produtosOpen {
+        top: 7%;
+    }
+}
