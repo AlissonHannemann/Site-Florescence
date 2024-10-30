@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Florescence</title>
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/responsivo.css">
 
@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
 
-        <!-- aos -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +28,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="imagens logo/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -40,7 +42,7 @@
     
     
     <!-- Swiper -->
-    <div class="slide1">
+    <div class="slide1" id="inicio">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="https://capatex.com.br/wp-content/uploads/2024/03/como-fazer-velas-aromaticas-1.webp" alt=""></div>
@@ -119,30 +121,30 @@
 
     <footer>
         <div class="infos">
-            <h2>Quem somos</h2>
-            <h2>Perguntas Frequentes</h2>
+            <a>Sobre Nós</a>
+            <a>Perguntas Frequentes</a>
         </div>
 
-        <h2 class="title">Contato</h2>
+        <h2 class="title" id="contatos">Contato</h2>
         <div class="contato">
             <div class="icones">
-                <i class="bi bi-whatsapp"></i>
-                <p>Whatsapp</p>
-            </div>
-
-            <div class="icones">
                 <i class="bi bi-telephone-fill"></i>
-                <p>(51) 998232322</p>
+                <p>(51) 99721-2484</p>
             </div>
 
             <div class="icones">
                 <i class="bi bi-envelope"></i>
-                <p>florescence@gmail.com</p>
+                <p>alissondeveloperr@gmail.com</p>
             </div>
 
             <div class="icones">
                 <i class="bi bi-clock"></i>
                 <p>Seg a Sex. das 10h as 18:30</p>
+            </div>
+
+            <div class="icones">
+                <i class="bi bi-whatsapp"></i>
+                <p>Whatsapp</p>
             </div>
         </div>
     </footer>
@@ -154,38 +156,29 @@
         </div>
 
         <div class="informacoes">
-            <p>Velas</p>
-            <p>Presentes</p>
-            <p>Acessórios</p>
-            <p>Sobre nós</p>
-            <p>Contato</p>
+            <a href="#inicio"  id="home">Início</a>
+            <a>Sobre nós</a>
+            <a id="contato"  href="#contatos">Contato</a>
         </div>
     </div>
 
     <div class="fundo"></div>
 
-    <div class="contProdutos">
-        <div class="produtos">
-            <img src="" alt="" class="imagem1" id="imagemProduto">
+    <div class="produtos">
+        <div class="contProdutos">
             <i class="bi bi-x-lg" id="fechar"></i>
-            <div class="infor">
-                <h2 class="titulo1"></h2>
-                <p class="preco1"></p>
-                <div class="buttons">
-                    <div id="contador-container">
-                        <button id="menos">-</button>
-                        <span id="contador">1</span>
-                        <button id="mais">+</button>
-                    </div>
-                    <button class="comprar">Comprar</button>
-                </div>
-                <div class="conteiner1">
-                    <div class="frete">
-                        <h2>Calcule seu Frete</h2>
-                    </div>
-                    <div class="caixas">
-                        <input type="text">
-                        <button>Calcular</button>
+            <div class="cont">
+                <img src="" alt="" id="imagemProduto">
+                <div class="informacoes">
+                    <h2 class="titulo1"></h2>
+                    <p class="preco1"></p>
+                    <div class="buttons">
+                        <div class="contador">
+                            <button id="menos">-</button>
+                            <span id="contador">1</span>
+                            <button id="mais">+</button>
+                        </div>
+                        <button id="comprar">Comprar</button>
                     </div>
                 </div>
             </div>
@@ -275,6 +268,8 @@
 </script>
 
 <script src="assets/scripts/menu.js"></script>
-<script src="assets/scripts/produtos.js"></script>
+<script type="module" src="assets/scripts/produtos.js"></script>
+<script src="assets/scripts/direcionamento.js"></script>
+<script type="module" src="assets/scripts/qtd.js"></script>
 </body>
 </html>
