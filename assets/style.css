@@ -24,8 +24,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 85px;
-    z-index: 10;
+    height: 100px;
+    z-index: 1000;
     background-color: rgb(204, 153, 102)
 }
 
@@ -34,7 +34,7 @@ header div {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    height: 85px;
+    height: 100px;
 }
 
 header h2 {
@@ -174,6 +174,7 @@ header div i {
 
 .slide4 .swiper-slide img {
     height: 70%;
+    object-fit: cover;
 }
 
 .slide4 .swiper-slide .titulo {
@@ -220,18 +221,23 @@ footer {
 footer .infos {
     padding: 10px 0;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-footer .infos h2:hover {
+footer .infos a:hover {
     color: rgb(107, 102, 102);
 }
 
-footer .infos h2 {
+footer .infos a {
     font-family: var(--fonte-min);
-    font-size: 17px;
+    font-size: 20px;
     color: #fff;
     letter-spacing: 1px;
     margin-left: 10px;
+    list-style: none;
+    text-decoration: none;
 }
 
 footer .title {
@@ -241,10 +247,15 @@ footer .title {
     text-align: center;
 }
 
+footer .contato {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--marrom);
+}
+
 footer .contato .icones {
     display: flex;
     flex-direction: row;
-    padding: 0 5px;
 }
 
 footer .contato .icones p:hover {
@@ -253,7 +264,7 @@ footer .contato .icones p:hover {
 }
 
 footer .contato .icones i {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0 8px;
     display: flex;
     align-items: center;
@@ -264,6 +275,9 @@ footer .contato .icones p {
     font-size: 17px;
     color: #fff;
     font-family: var(--fonte-min);
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* menu */
@@ -303,163 +317,120 @@ footer .contato .icones p {
 }
 
 .menu .informacoes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 20px;
     color: #fff;
     font-size: 25px;
     font-family: var(--fonte-min);
     margin-left: 7px;
 }
 
-/* carrinho */
+.menu .informacoes a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu .informacoes a:hover {
+    color: var(--marrom);
+}
+
+/* produtos */
 
 .produtos {
-    display: flex;
     position: fixed;
-    top: -1500px;
-    left: 13%;
-    z-index: 15;
-    width: 70%;
-    padding: 20px 15px;
-    margin: auto;
-    border: 2px solid rgb(129, 121, 121);
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    margin-top: 105px;
+    transform: translate(-50%, -50%);
     background-color: #eee;
-    transition: top 0.5s ease;
-    justify-content: space-between;
-    border-radius: 7px;
-}
-
-#produtosOpen {
-    top: 12%;
-}
-
-.produtos img {
-    width: 400px;
-    height: 500px;
+    padding: 20px 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 12;
     border-radius: 10px;
-    margin-left: 30px;
 }
 
-.produtos .infor {
-    margin: 30px;
+#produtosOn {
+    opacity: 1;
+    pointer-events: all;
 }
 
-.produtos .infor .titulo1 {
-    font-size: 30px;
-    font-family: var(--fonte-min);
-    color: #e9c395;
-    margin: 10px 0;
-    padding: 0;
-}
-
-.produtos .infor .preco1 {
-    font-size: 25px;
-    font-family: monospace;
-    color: #e9c395;
-    margin: 0;
-    padding: 0;
-}
-
-#contador-container {
+.produtos .contProdutos img {
     display: flex;
-    justify-content: center;
-    width: 100px;
-    height: 25px;
-    margin-top: 20px;
-    padding: 7px 0;
-    margin: auto 0;
-    gap: 10px;
-    background-color: #fff;
-    border: 2px solid rgb(129, 121, 121);
-    border-radius: 3px;
+    width: 320px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    object-fit: cover;
 }
 
-#contador {
-    font-size: 18px;
-    margin: auto 0;
+.produtos .contProdutos i {
+    margin-left: 20px;
+    font-size: 30px;
+    color: var(--marrom);
 }
-#menos, #mais{
-    font-size: 18px;
+
+.produtos .contProdutos .informacoes h2 {
+    font-family: var(--fonte-min);
+    font-size: 30px;
+    margin-left: 30px;
+    color: var(--marrom);
+}
+
+.produtos .contProdutos .informacoes p {
+    font-family: var(--fonte-min);
+    font-size: 25px;
+    color: var(--marrom);
+    margin-left: 25px;
+    font-weight: 800;
+}
+
+.produtos .contProdutos .informacoes .contador {
+    width: 130px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--marrom);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.produtos .contProdutos .informacoes .contador #menos, #mais {
     border: none;
+    font-size: 30px;
+    width: 30px;
+    margin: 0 6px;
+    padding: 6px 0;
     background-color: transparent;
     color: var(--marrom);
-    cursor: pointer;
 }
 
-.produtos .buttons {
+.produtos .contProdutos .informacoes .contador #contador {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.produtos .contProdutos .informacoes .buttons {
     display: flex;
     flex-direction: row;
-    width: 500px;
-    height: 100px;
-    margin-top: 20px;
+    gap: 15px;
 }
 
-.produtos i {
-    position: fixed;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px 50px;
-    font-size: 30px;
-    cursor: pointer;
-    color: #000;
-}
-
-.produtos .buttons .comprar {
-    width: 338px;
-    display: flex;
-    height: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: auto 20px;
-    border-radius: 3px;
-    background-color: var(--marrom);
-    font-family: monospace;
-    color: #fff;
-    font-size: 20px;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-}
-
-.produtos .buttons .comprar:hover {
-    background-color: #d1b08a;
-}
-
-.conteiner1 {
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.frete {
-    margin-top: 50px;
-    padding-top: 10px;
-}
-
-.frete h2 {
-    font-size: 25px;
+.produtos .contProdutos .informacoes .buttons #comprar {
     font-family: var(--fonte-min);
-}
-
-.caixas input {
-    width: 230px;
-    height: 30px;
-    border: 2px solid rgb(129, 121, 121);
-}
-
-.caixas button {
-    width: 200px;
-    height: 33px;
-    margin-left: 20px;
-    border: 2px solid rgb(129, 121, 121);
-    font-size: 15px;
-    color: var(--marrom);
-    font-family: monospace;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: #fff;
-}
-
-.caixas button:hover {
+    font-size: 22px;
+    width: 190px;
     background-color: var(--marrom);
     color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
