@@ -1,81 +1,49 @@
 @media (max-width: 349px) {
+    header {
+        height: 85px;
+    }
+
+    header div {
+        height: 85px;
+    }
+
     .produtos {
-        flex-direction: column;
-        width: 100%;
-        left: 0;
+        margin-top: 89px;
     }
 
-    .produtos img {
+    .produtos .contProdutos img {
         width: 200px;
-        height: 250px;
-        margin: 0;
+        height: 230px;
     }
 
-    #produtosOpen {
-        top: 0;
+    .produtos .contProdutos i {
+        font-size: 24px;
     }
 
-    .produtos .infor {
-        margin: 0;
+    .produtos .contProdutos .informacoes h2 {
+        font-size: 23px;
     }
 
-    .produtos .buttons {
-        margin: 0;
+    .produtos .contProdutos .informacoes p {
+        font-size: 19px;
     }
 
-    .produtos .buttons .comprar {
+    .produtos .contProdutos .informacoes .contador {
+        width: 100px;
+    }
+
+    .produtos .contProdutos .informacoes .buttons #comprar {
         width: 150px;
     }
 
-    .conteiner1 {
-        display: none;
+    .slide4 .swiper {
+        width: 340px;
+        height: 390px;
     }
 
-}
-
-@media (min-width: 350px) and (max-width: 429px) {
-    .produtos {
+    footer .contato {
+        display: flex;
         flex-direction: column;
-        width: 100%;
-        left: 0;
-    }
-
-    .produtos img {
-        width: 300px;
-        height: 350px;
-        margin: 0;
-    }
-
-    #produtosOpen {
-        top: 0;
-    }
-
-    .produtos .infor {
-        margin: 0;
-    }
-
-    .produtos .buttons {
-        margin: 0;
-    }
-
-    .produtos .buttons .comprar {
-        width: 200px;
-    }
-
-    .conteiner1 {
-        padding-left: 0;
-    }
-
-    .frete {
-        margin: 0;
-        padding: 0;
-    }
-
-    .caixas button {
-        margin-left: 0;
-        margin-top: 15px;
-        width: 237px;
-        height: 40px;
     }
 }
 
@@ -146,7 +114,41 @@
         font-size: 37px;
     }
 
-    footer .infos h2 {
+    .produtos {
+        width: 85%;
+        height: 80%;
+        margin-top: 50px;
+    }
+
+    .produtos .contProdutos img {
+        width: 400px;
+        height: 450px;
+    }
+
+    .produtos .contProdutos i {
+        font-size: 28px;
+    }
+
+    .produtos .contProdutos .informacoes h2 {
+        font-size: 30px;
+        margin-left: 45px;
+    }
+
+    .produtos .contProdutos .informacoes p {
+        font-size: 25px;
+        margin-left: 45px;
+    }
+
+    .produtos .contProdutos .informacoes .contador {
+        width: 120px;
+        margin-left: 45px;
+    }
+
+    .produtos .contProdutos .informacoes .buttons #comprar {
+        width: 280px;
+    }
+
+    footer .infos a {
         font-size: 23px;
     }
 
@@ -160,65 +162,6 @@
 
     footer .contato .icones p {
         font-size: 22px;
-    }
-
-
-    .produtos {
-        width: 95%;
-        left: 0;
-    }
-
-    .produtos img {
-        width: 300px;
-        height: 350px;
-        margin: 0;
-        margin-right: 15px;
-    }
-
-    #produtosOpen {
-        top: 12%;
-    }
-
-    .produtos .infor {
-        margin: 0;
-    }
-
-    .produtos .buttons {
-        margin: 0;
-    }
-
-    .produtos .buttons .comprar {
-        width: 200px;
-    }
-
-    .conteiner1 {
-        padding-left: 0;
-    }
-
-    .frete {
-        margin: 0;
-        padding: 0;
-    }
-
-    .caixas button {
-        margin-left: 0;
-        margin-top: 15px;
-        width: 237px;
-        height: 40px;
-    }
-
-    .caixas input {
-        width: 150px;
-    }
-
-    .caixas button {
-        width: 160px;
-        height: 36px;
-        margin-left: 15px;
-    }
-
-    .produtos i {
-        margin: 20px 10px;
     }
 } 
 
@@ -301,7 +244,7 @@
         font-size: 44px;
     }
 
-    footer .infos h2 {
+    footer .infos a {
         font-size: 28px;
     }
 
@@ -317,74 +260,38 @@
         font-size: 27px;
     }
 
-
     .produtos {
-        width: 95%;
-        left: 0;
+        width: 85%;
+        height: 80%;
+        margin-top: 50px;
     }
 
-    .produtos img {
-        width: 300px;
-        height: 350px;
-        margin: 0;
-        margin-right: 15px;
+    .produtos .contProdutos img {
+        width: 450px;
+        height: 450px;
     }
 
-    #produtosOpen {
-        top: 23%;
-    }
-
-    .produtos .infor {
-        margin: 0;
-    }
-
-    .produtos .buttons {
-        margin: 0;
-    }
-
-    .produtos .buttons .comprar {
-        width: 250px;
-    }
-
-    .conteiner1 {
-        padding-left: 0;
-    }
-
-    .frete {
-        margin: 0;
-        padding: 0;
-    }
-
-    .caixas button {
-        margin-left: 10px;
-        margin-top: 15px;
-        width: 200px;
-        height: 40px;
-    }
-
-    .caixas input {
-        width: 150px;
-        height: 35px;
-    }
-
-    .produtos i {
-        margin: 20px 10px;
-    }
-
-    .produtos .infor .titulo1 {
-        font-size: 35px;
-    }
-
-    .produtos .infor .preco1 {
+    .produtos .contProdutos i {
         font-size: 30px;
     }
 
-    .frete h2 {
-        font-size: 30px;
+    .produtos .contProdutos .informacoes h2 {
+        font-size: 33px;
+        margin-left: 45px;
     }
 
-    .caixas button {
-        font-size: 20px;
+    .produtos .contProdutos .informacoes p {
+        font-size: 28px;
+        margin-left: 45px;
+    }
+
+    .produtos .contProdutos .informacoes .contador {
+        width: 120px;
+        margin-left: 45px;
+    }
+
+    .produtos .contProdutos .informacoes .buttons #comprar {
+        width: 370px;
     }
 }
 
@@ -450,7 +357,7 @@
         width: 80%;
     }
 
-    footer .infos h2 {
+    footer .infos a {
         font-size: 28px;
     }
 
@@ -473,46 +380,45 @@
 
     .produtos {
         width: 80%;
-        left: 10%;
+        height: 77%;
+        margin-top: 50px;
     }
 
-    .produtos .infor .titulo1 {
-        font-size: 37px;
+    .produtos .contProdutos .cont {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        margin: 0 auto;
     }
 
-    .produtos .infor .preco1 {
+    .produtos .contProdutos img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .produtos .contProdutos i {
         font-size: 30px;
     }
 
-    .produtos .buttons .comprar {
-        width: 300px;
+    .produtos .contProdutos .informacoes h2 {
+        font-size: 33px;
+        margin-left: 10px;
     }
 
-    .conteiner1 {
-        padding: 0;
+    .produtos .contProdutos .informacoes p {
+        font-size: 28px;
+        margin-left: 10px;
     }
 
-    .frete {
-        margin-top: 20px;
-        padding: 0;
+    .produtos .contProdutos .informacoes .contador {
+        width: 120px;
+        margin-left: 10px;
     }
 
-    .frete h2 {
-        font-size: 32px;
+    .produtos .contProdutos .informacoes .buttons #comprar {
+        width: 220px;
     }
 
-    .conteiner1 .caixas {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .caixas button {
-        width: 238px;
-        margin-left: 0;
-        margin-top: 20px;
-        font-size: 20px;
-        height: 37px;
-    }
 }
 
 @media (min-width: 1100px) {
